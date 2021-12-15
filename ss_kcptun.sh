@@ -1,8 +1,4 @@
 #! /bin/bash
-vi rule.v4
-vi kcpconfig.json
-vi ssconfig.json
-iptables-restore < /root/ss_and_kcptun/rule.v4
 wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
 python get-pip.py
 pip install https://github.com/shadowsocks/shadowsocks/archive/master.zip -U
