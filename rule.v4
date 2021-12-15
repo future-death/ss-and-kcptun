@@ -1,0 +1,17 @@
+*filter
+:INPUT ACCEPT [7709:532096]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [9788:1351979]
+-A INPUT -p tcp -m tcp --dport 9790 -j ACCEPT
+-A INPUT -p udp -m udp --dport 9790 -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 9890 -j ACCEPT
+-A INPUT -p udp -m udp --dport 9890 -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 9990 -j ACCEPT
+-A INPUT -p udp -m udp --dport 9990 -j ACCEPT
+-A OUTPUT -p tcp -m tcp --dport 9790 -j ACCEPT
+-A OUTPUT -p udp -m udp --dport 9790 -j ACCEPT
+-A OUTPUT -p tcp -m tcp --dport 9890 -j ACCEPT
+-A OUTPUT -p udp -m udp --dport 9890 -j ACCEPT
+-A OUTPUT -p tcp -m tcp --dport 9990 -j ACCEPT
+-A OUTPUT -p udp -m udp --dport 9990 -j ACCEPT
+COMMIT
